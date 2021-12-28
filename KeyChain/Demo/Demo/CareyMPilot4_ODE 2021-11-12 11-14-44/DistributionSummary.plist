@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CareyMPilot4_ODE.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>3.59.01</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>D3A952329F5B8E4214CA64BBC2F8C3C5A2AA4903</string>
+				<key>dateExpires</key>
+				<string>08/02/23</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>N6L8987864.com.carey.CareyMobile</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>N6L8987864</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>N6L8987864.N6L8987864.com.carey.careypaxm</string>
+					<string>N6L8987864.N6L8987864.com.embarque.embarquepaxm</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>CareyMPilot4_ODE.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>d71101e7-bc62-4b9d-90f4-e807f4b37afc</string>
+				<key>dateExpires</key>
+				<string>12/11/22</string>
+				<key>name</key>
+				<string>CareyMobile</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>N6L8987864</string>
+				<key>name</key>
+				<string>Carey International, Inc. (Enterprise)</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>3.59.01</string>
+		</dict>
+	</array>
+</dict>
+</plist>

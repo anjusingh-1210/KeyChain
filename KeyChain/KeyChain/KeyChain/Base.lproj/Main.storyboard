@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7UA-Oq-9mx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KeyChain" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QjZ-YZ-xb3">
+                                <rect key="frame" x="80" y="208" width="254" height="34"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="0.0"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="BZG-ad-ts0"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lt8-Vy-JlW">
+                                <rect key="frame" x="80" y="312" width="254" height="34"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="0.0"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="u9a-L0-yd0"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRo-fV-VfJ">
+                                <rect key="frame" x="80" y="450" width="254" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="kJj-f2-9eY"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save Securely">
+                                    <fontDescription key="titleFontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="SaveSecurely:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rh9-GE-OOo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="Lt8-Vy-JlW" firstAttribute="top" secondItem="QjZ-YZ-xb3" secondAttribute="bottom" constant="70" id="2tc-70-enD"/>
+                            <constraint firstItem="Lt8-Vy-JlW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="Ab3-FJ-BJ1"/>
+                            <constraint firstItem="QjZ-YZ-xb3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="Eqw-vM-Unh"/>
+                            <constraint firstItem="QjZ-YZ-xb3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="FAo-0z-n1i"/>
+                            <constraint firstItem="CRo-fV-VfJ" firstAttribute="top" secondItem="Lt8-Vy-JlW" secondAttribute="bottom" constant="104" id="NUJ-Kh-iG2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QjZ-YZ-xb3" secondAttribute="trailing" constant="80" id="UII-7Y-LdD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CRo-fV-VfJ" secondAttribute="trailing" constant="80" id="qrv-T5-Ix0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lt8-Vy-JlW" secondAttribute="trailing" constant="80" id="sVr-ut-6Oy"/>
+                            <constraint firstItem="CRo-fV-VfJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="ya4-x0-Yr9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uXF-Rx-ttY"/>
+                    <connections>
+                        <outlet property="emailIdTextField" destination="QjZ-YZ-xb3" id="LyV-MV-tzA"/>
+                        <outlet property="passwordTextField" destination="Lt8-Vy-JlW" id="YUm-iV-BOs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="79.6875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pNs-mc-AES">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7UA-Oq-9mx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rbw-9J-ZXA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qeN-ee-q2s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N4t-TG-Hgv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
